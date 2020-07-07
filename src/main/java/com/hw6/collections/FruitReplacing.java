@@ -4,13 +4,18 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class FruitReplacing {
-    public void replaceValue() {
+    List<String> createList() {
+
         List<String> fruits = new ArrayList<>();
         fruits.add("Peach");
         fruits.add("Melon");
         fruits.add("Coconut");
         fruits.add("Lemon");
         fruits.add("Orange");
+        return fruits;
+    }
+
+    public void replaceValue(List<String> fruits) {
         int i = fruits.indexOf("Orange");
         if (i >= 0) {
             fruits.set(i, "Grapefruit");
