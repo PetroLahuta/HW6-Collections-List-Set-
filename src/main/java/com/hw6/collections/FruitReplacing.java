@@ -5,7 +5,6 @@ import java.util.List;
 
 public class FruitReplacing {
     List<String> createList() {
-
         List<String> fruits = new ArrayList<>();
         fruits.add("Peach");
         fruits.add("Melon");
@@ -19,8 +18,9 @@ public class FruitReplacing {
         int i = fruits.indexOf("Orange");
         if (i >= 0) {
             fruits.set(i, "Grapefruit");
-        } else
+        } else {
             System.out.println("Value not present");
+        }
 
         System.out.println("Fruits: " + fruits);
     }
